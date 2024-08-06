@@ -19,8 +19,20 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', views.index),
     path('add/', views.add),
+    path('', views.index),
+
+    path('sub/', views.sub),
+    path('twobutton/', views.twobutton),
+    path('mul/', views.mul),
+    path('radio/', views.radio),
+    path('select/', views.select),
+    path('checkbox/', views.checkbox),
+    path('facebook/', views.facebook),
+    path('collage/', views.collage),
+    path('post/', views.post),
+    path('book/', views.book),
+    path('laptop/', views.laptop),
+    path('roll/', views.roll)
 
 ]

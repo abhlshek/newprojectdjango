@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>laptop</title>
+</head>
+<body>
+
+<h1>laptop</h1>
+<hr/>
+<form method="post">
+{% csrf_token %}
+
+<label>hp<input type="checkbox" name="hp" value="hp"/></label>
+<label>lenovo<input type="checkbox" name="lenovo" value="lenovo"></label>
+<label>ibm<input type="checkbox" name="ibm" value="ibm"></label>
+<br>
+<input type="submit" name="submit">
+</form>
+
+</body>
+</html>
+
+
+
+

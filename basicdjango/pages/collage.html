@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>collage</title>
+</head>
+<body>
+<h2>{{firstname}}</h2>
+<h2>{{middlename}}</h2>
+<h2>{{lastname}}</h2>
+<h2>{{tel}}</h2>
+<h2>{{email}}</h2>
+<h2>mail</h2>
+<h2>femail</h2>
+<form>
+ <h5>Name</h5>
+<input type="text" class="form-control" placeholder="First name" aria-label="First name" name="fname" value="{{firstname}}">
+<input type="text"  placeholder="middle name" name="mname" value="{{middlename}}">
+<input type="text" placeholder="last name" name="lname" value="{{lastname}}">
+ <br>
+<h5>Birth Date</h5>
+<input type="date" placeholder="please select a day" name="day" value="{{day}}">
+ <br>
+<h5>Gender</h5>
+
+<p>mail
+<input type="checkbox" value="checkbox" name="checkbox">
+femail
+<input type="checkbox" value="checkbox" name="checkbox">
+</p>
+<input type="tel"  name="tel" placeholder="phone">
+<input type="email" name="email" placeholder="email">
+<br>
+<h5>address</h5>
+<input type="text" placeholder="address" name="address" value="{{address}}">
+<br>
+<h5>city</h5>
+<input type="text" placeholder="city" name="city" value="{{city}}">
+<input type="text"placeholder="state" name="state" value="{{state}}">
+<h5>postal</h5>
+<input name="a1" value="{{a}}" type="text" placeholder="code">
+<br>
+<hr/>
+<p>Do you speak any language other than english</p>
+<p>yes
+<input type="radio" name="radio" value="{{radio}}">
+no
+<input type="radio" name="radio" value="{{radio}}"></p>
+
+
+
+    
+
+<input type="submit" name="submit">
+</form>
+
+</body>
+</html>

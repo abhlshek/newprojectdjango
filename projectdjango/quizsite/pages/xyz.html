@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUESTION</title>
+</head>
+
+<body>
+    <form method="post">
+        {% csrf_token %}
+
+        <input type="text" name="question" placeholder="question">
+        <br/>
+        <input type="text" name="opta" placeholder="opta" value="opta">
+        <input type="text" name="optb" placeholder="optb" value="optb">
+        <br/>
+        <input type="text" name="optc" placeholder="optc" value="optc">
+        <input type="text" name="optd" placeholder="optd" value="optd">
+        <br>
+        <input type="text" name="correctanswer" placeholder="correctanswer" value="correctanswer">
+        <input type="submit" name="submit">
+
+    </form>
+</body>
+
+</html>

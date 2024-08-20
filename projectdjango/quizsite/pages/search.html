@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search</title>
+</head>
+
+<body>
+    <div>{{data}}</div>
+    {% for book in data %} {{book.name}}
+    <hr> {{book.id}}
+    <br> {% endfor %}
+    <form>
+        <input type="text" name="name" value="{{name}}" placeholder="please enter name">
+        <input type="submit" name="submit">
+    </form>
+</body>
+
+</html>

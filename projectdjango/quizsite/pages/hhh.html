@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="post">
+        {% csrf_token %}
+        <label>roll<input type="text" name="roll" value="{{roll}}" placeholder="roll"></label>
+        <label>name<input type="text" name="name" value="{{name}}" placeholder="name"></label>
+        <label>java<input type="text" name="java" value="{{java}}" placeholder="java"></label>
+        <label>python<input type="text" name="python" value="{{python}}" placeholder="python"></label>
+        <label>c<input type="text" name="c" value="{{c}}" placeholder="c"></label>
+        <input type="submit">
+
+
+
+
+
+    </form>
+</body>
+
+</html>

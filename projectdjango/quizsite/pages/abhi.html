@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>{{data}}</div>
+    {% for book in data %} {{book.customername}} {{book.country}} {{book.age}} {{book.phone}}
+    <br> {% endfor %}
+
+    <form>
+        <input type="text" name="customername" value="{{customername}}" placeholder="customername">
+        <input type="text" name="country" value="{{country}}" placeholder="country">
+        <input type="text" name="age" value="{{age}}" placeholder="age">
+        <input type="phone" name="phone" value="{{phone}}" placeholder="phone">
+        <input type="submit" name="submit">
+    </form>
+</body>
+
+</html>

@@ -31,6 +31,26 @@ urlpatterns = [
     path('xyz/',views.xyz),
     path('searchbooks/',views.searchbooks),
     path('searchlist/',views.searchlist),
-    path('searchdic/',views.searchdic)
-     
+    path('searchdic/',views.searchdic),
+    path('school/',views.school),
+    path("coll/",views.coll),
+    path('vvv/',views.vvv),
+    path('jjj/',views.jjj),
+    path('results/',views.results),
+    path('intro/',views.intro),
+    path('cust/',views.cust),
+    path('res/',views.res),
+    path('shop/',views.shop),
+    path('searchresult/',views.searchresult),
+    path('searchintro/',views.searchintro),
+    path('searchcust/',views.searchcust),
+    path('searchres/',views.searchres),
+    path('searchshop/',views.searchshop),
+    path('bike/',views.bike),
+    path('banks/',views.banks),
+    path('searchbanks/',views.searchbanks),
+    path('deposite/',views.deposite),
+    path('deposit2/',views.deposit2),
+    path('withdraw/',views.withdraw),
+    path('withdraw1/',views.withdraw1)
 ]

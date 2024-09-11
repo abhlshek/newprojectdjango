@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>{{result}}</div>
+    <table border="1" style="display: {{display}};">
+        <tr>
+            <th>Name</th>
+            <th>Balance</th>
+            <th>Branch</th>
+        </tr>
+        <tr>
+            <td>{{data.name}}</td>
+            <td>{{data.balance}}</td>
+            <td>{{data.branch}}</td>
+        </tr>
+    </table>
+    <form>
+
+        <input type="text" name="account" value="{{account}}" placeholder="account">
+
+
+        <input type="submit" value="conform" name="submit">
+        <br>
+
+
+
+
+    </form>
+    <h4>deposite</h4>
+    <br> <br>
+    <form action="/deposit2" style="display: {{display}};">
+        <input type="text" name="account" value="{{account}}" placeholder="account">
+
+        <input type="text" name="balance" value="{{balance}}" placeholder="balance">
+        <input type="submit" value="conform" name="submit">
+
+    </form>
+
+
+
+    </form>
+
+</body>
+
+</html>

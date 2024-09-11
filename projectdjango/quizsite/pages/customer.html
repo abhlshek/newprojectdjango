@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>customer</title>
+</head>
+
+<body>
+    <form method="post">
+        {% csrf_token %}
+        <input type="text" name="customername" placeholder="customer name" value="{{customername}}">
+        <input type="text" name="country" placeholder="country" value="{{country}}">
+        <input type="text" name="age" placeholder="age" value="{{age}}">
+        <input type="phone" name="phone" placeholder="phone" value="{{phone}}">
+        <input type="submit" name="submit">
+
+    </form>
+</body>
+
+</html>

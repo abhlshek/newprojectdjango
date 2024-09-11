@@ -1,5 +1,5 @@
 from django.http import HttpResponse
-
+from django.shortcuts import render
 
 
 def twobutton(request):
@@ -47,7 +47,7 @@ def sub(request):
 
 
 def index(request):
-    return render(request, 'hello.html')
+    return HttpResponse('hello.html')
 
 
 def mul(request):
@@ -112,31 +112,32 @@ def checkbox(request):
 
 def facebook(request):
     result = ""
-    a = 0
-    b = 0
-    c = 0
-    d = 0
-    e = 0
-    f = 0
-    g = 0
-    h = 0
-    i = 0
-    j = 0
+    fname = ""
+    lname = ""
+    phoneemail = ""
+    password = ""
+    dateofdirth = ""
+    mail = ""
+    femail = "femail"
+    custom = ""
+    checkbox = ""
     if request.GET:
-        a = int(request.GET["fname"])
-        b = int(request.GET["lname"])
-        c = int(request.GET["phone email"])
-        d = int(request.GET["password"])
-        e = int(request.GET["date of birth"])
-        f = int(request.GET["mail"])
-        g = int(request.GET["femail"])
-        h = int(request.GET["checkbox"])
-        i = int(request.GET["custom"])
-        j = int(request.GET["checkbox"])
-        x = request.GET["facebook"]
+        fname = int(request.GET["fname"])
+        lname = int(request.GET["lname"])
+        phoneemail = int(request.GET["phone email"])
+        password = int(request.GET["password"])
+        dateofdirth = int(request.GET["date of birth"])
+        mail = int(request.GET["mail"])
+        femail = int(request.GET["femail"])
+        custom = int(request.GET["custom"])
+        checkbox = int(request.GET["checkbox"])
+        result = request.GET["facebook"]
+        print(result)
 
     return render(request, "facebook.html",
-                  {"result": result, "a": a, "b": b, "c": c, "d": d, "e": e, "f": f, "g": g, "h": h, "i": i, "j": j})
+                  {"result": result, "fname": fname, "lname": lname, "phoneemail": phoneemail, "password": password,
+                   "dateofbirth": dateofdirth, "mail": mail, "femail": femail, "checkbox": checkbox,
+                   "custom": custom, })
 
 
 def collage(request):
@@ -156,7 +157,7 @@ def collage(request):
     if request.GET:
         firstname = request.GET["fname"]
         middlename = request.GET["mname"]
-        lastname = request.GET["lname"]
+        lastname = request.GET["name"]
 
         day = request.GET["day"]
         checkbox = request.GET["checkbox"]

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>data</div>
+    {% for book in data %} {{book.roll}} {{book.name}} {{book.java}} {{book.python}} {{book.c}}
+    <br> {% endfor %}
+    <form>
+        <input type="text" name="roll" value="{{roll}}" placeholder="roll">
+        <input type="text" name="name" value="{{name}}" placeholder="name">
+        <input type="text" name="java" value="{{java}}" placeholder="java">
+        <input type="text" name="python" value="{{python}}" placeholder="python">
+        <input type="text" name="c" value="{{c}}" placeholder="c">
+        <input type="submit" name="submit">
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotal</title>
+</head>
+
+<body>
+    <form method="post">
+        {% csrf_token %}
+        <input type="text" name="name" value="{{name}}" placeholder="enter name">
+        <input type="text" name="address" value="{{address}}" placeholder="enter address">
+        <input type="text" name="city" value="{{city}}" placeholder="city">
+        <input type="text" name="state" value="{{state}}" placeholder="state">
+        <input type="phone" name="phone" value="{{phone}}" placeholder="phone">
+        <input type="email" name="email" value="{{email}}" placeholder="email">
+        <input type="submit" name="submit">
+
+    </form>
+</body>
+
+</html>

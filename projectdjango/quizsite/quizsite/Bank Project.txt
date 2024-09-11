@@ -1,0 +1,10 @@
+Bank Project
+1. Open am account
+Deposit money
+withdraw money
+close account
+Search by accountno
+Search by name,,etc
+Aggregate  No of accounts,  total amount
+
+AccountNo 12   GET

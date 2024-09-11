@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="post">
+        {% csrf_token %}
+        <label>account<input type="text" name="account" value="{{account}}" placeholder="account"></label>
+        <label>name<input type="text" name="name" value="{{name}}" placeholder="name"></label>
+        <label>branch<input type="text" name="branch" value="{{branch}}" placeholder="branch"></label>
+        <label>balance<input type="text" name="balance" value="{{balance}}" placeholder="balance"></label>
+        <input type="submit" name="submit">
+    </form>
+</body>
+
+</html>

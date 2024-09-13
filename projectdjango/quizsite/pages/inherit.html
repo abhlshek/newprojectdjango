@@ -14,7 +14,12 @@
     <form method="post">
         {% csrf_token %}
         <label>account<input type="text" name="account" value="{{account}}" placeholder="account"></label>
-        <label>name<input type="text" name="name" value="{{name}}" placeholder="name"></label>
+
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" s placeholder="name">
+            <label for="floatingInput">name</label>
+          </div>
+
         <label>branch<input type="text" name="branch" value="{{branch}}" placeholder="branch"></label>
         <label>balance<input type="text" name="balance" value="{{balance}}" placeholder="balance"></label>
         <input type="submit" name="submit">

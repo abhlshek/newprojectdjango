@@ -702,6 +702,14 @@ def withdraw1(request):
 
 
 
+# .................
+def base(request):
+    return render(request,"text.html")
+
+
+
+
+
 
 
 

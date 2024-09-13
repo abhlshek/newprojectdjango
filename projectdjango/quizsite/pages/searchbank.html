@@ -8,6 +8,8 @@
 </head>
 
 <body>
+    {% extends "web.html" %} {% block title %}
+    <h3>Bank</h3>{% endblock %} {% block content %}
     <h2>{{result}}</h2>
 
 
@@ -30,6 +32,7 @@
 
         <input type="submit" value="Confirm" placeholder="conform">
     </form>
+    {% endblock %}
 </body>
 
 </html>

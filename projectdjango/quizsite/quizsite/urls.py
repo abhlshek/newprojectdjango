@@ -52,5 +52,6 @@ urlpatterns = [
     path('deposite/',views.deposite),
     path('deposit2/',views.deposit2),
     path('withdraw/',views.withdraw),
-    path('withdraw1/',views.withdraw1)
+    path('withdraw1/',views.withdraw1),
+    path('base/',views.base)
 ]

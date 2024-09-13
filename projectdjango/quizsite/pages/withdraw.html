@@ -8,6 +8,10 @@
 </head>
 
 <body>
+    {% extends "web.html" %} {% block title %}
+    <h3>Bank</h3>{% endblock %} {% block content %}
+
+
     <div>{{result}}</div>
     <table border="1" style="display: {{display}};">
         <tr>
@@ -46,6 +50,7 @@
 
 
     </form>
+    {% endblock %}
 
 </body>
 

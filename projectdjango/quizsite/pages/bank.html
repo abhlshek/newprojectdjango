@@ -1,25 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    {% extends "base.html" %} 
 
-<body>
-    {% extends "text.html" %} {% block title %}
-    <h3>Bank</h3>{% endblock %} {% block content %}
 
-    <form method="post">
-        {% csrf_token %}
-        <label>account<input type="text" name="account" value="{{account}}" placeholder="account"></label>
-        <label>name<input type="text" name="name" value="{{name}}" placeholder="name"></label>
-        <label>branch<input type="text" name="branch" value="{{branch}}" placeholder="branch"></label>
-        <label>balance<input type="text" name="balance" value="{{balance}}" placeholder="balance"></label>
-        <input type="submit" name="submit">
-    </form>
-    {% endblock %}
-</body>
 
-</html>
+    {% block content %} 
+<form method="post">
+  {% csrf_token %}
+    <div class="row">
+<div class="col-md-6">
+  <div class="form-floating mb-3">
+    <input type="text"  name="account" value="{{account}}" class="form-control" id="floatingInput" placeholder="Account">
+    <label for="floatingInput">Account</label>
+  </div>
+</div>
+
+<div class="col-md-6">
+  <div class="form-floating mb-3">
+  <input type="text" name="name" value="{{name}}" class="form-control" id="floatingInput" placeholder="name">
+  <label for="floatingInput">name</label>
+  </div>
+</div>
+    </div>
+    <div class="row">
+ 
+      <div class="col-md-6">
+        <div class="form-floating mb-3">
+          <input type="text" name="branch" value="{{branch}}" class="form-control" id="floatingInput" placeholder="branch">
+          <label for="floatingInput">branch</label>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-floating mb-3">
+          <input type="text" value="{{balance}}" name="balance" class="form-control" id="floatingInput" placeholder="balance">
+          <label for="floatingInput">balance</label>
+        </div>
+        
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <input type="submit" value="conform">
+        </div>
+      </div>
+
+    </div>
+  </form>
+
+    {% endblock %} 

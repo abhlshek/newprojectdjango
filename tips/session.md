@@ -1,3 +1,6 @@
+
+<img width="960" alt="image" src="https://github.com/user-attachments/assets/d3b8dd15-3076-4409-944c-f751b4c866c3">
+
 # session...............
 
 def sessionset(request):
